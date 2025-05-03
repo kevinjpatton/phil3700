@@ -110,58 +110,9 @@ table, th, td {  /* This will apply the font to the entire table */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);  /* Shadow properties */
 }
 /* Page-Specific Hero Image Styles */
-.home-page {
-  background-image: url("/images/heroimage-home-tilly-and-captain.jpg");
-}
-.cv-page {
-  background-image: url("/images/heroimage-cv-jonathan-kemper-.jpg");
-}
-.research-page {
-  background-image: url("/images/heroimage-research-annie-spratt.jpg");
-}
-.teaching-page {
-  background-image: url("/images/heroimage-teaching-nathan-dumlao.jpg");
-}
-.contact-page {
-  background-image: url("/images/heroimage-contact-me-sue-hughes.jpg");
-}
-.resources-page {
-  background-image: url("/images/heroimage-resources-desola-lanre-ologun.jpg");
-}
-.fourohfour-page {
-  background-image: url("/images/heroimage-404-gabriel-soto.jpg");
-}
-.phil_3230-page {
-  background-image: url("/teaching/phil_3230/hereoimage-3230-derek-story.jpg");
-}
-.phil_3050-page {
-  background-image: url("/teaching/phil_3050/heroimage-3050-andrea-de-santis.jpg");
-}
 .phil_2030-page {
-  background-image: url("/teaching/phil_2030/heroimage-2030-kelly-sikkema.jpg");
+  background-image: url("/heroimage-2030-kelly-sikkema.jpg");
 }
-.phil_1010-page {
-  background-image: url("/teaching/phil_1010/heroimage-1010-pablo-stanic.jpg");
-}
-.pastcourses-page {
-  background-image: url("/teaching/pastcourses/heroimage-pastcourses-towfiqu-barbhuiya.jpg");
-}
-.pedagogy-page {
-  background-image: url("/pedagogy/heroimage-teachingtheory-alexander-grey.jpg");
-}
-.dissertation-page {
-  background-image: url("/images/heroimage-dissertation-crystal-jo.jpg");
-}
-.podcasts-page {
-  background-image: url("/images/heroimage-podcasts-szabo-viktor.jpg");
-}
-.phil_3700-page {
-  background-image: url("/teaching/phil_3700/heroimage-phil_3700-daniele-levis-pelusi.jpg");
-}
-.bookclub-page {
- background-image: url("/teaching/bookclub/heroimage-bookclub-s-o-c-i-a-l-c-u-t.jpg");
-}
-  
 /* Content Image */
 .content-image {
   width: 800px; 
