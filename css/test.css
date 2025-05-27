@@ -110,8 +110,8 @@ table, th, td {  /* This will apply the font to the entire table */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);  /* Shadow properties */
 }
 /* Page-Specific Hero Image Styles */
-.phil_2030-page {
-  background-image: url("/heroimage-2030-kelly-sikkema.jpg");
+.phil_3050-page {
+  background-image: url("/heroimage-3050-andrea-de-santis.jpg");
 }
 /* Content Image */
 .content-image {
