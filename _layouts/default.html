@@ -33,31 +33,53 @@
 </head>
 <body class="font-sans antialiased min-h-screen flex flex-col selection:bg-void-accent selection:text-white bg-void-bg text-void-textMain">
 
-    <!-- Ambient Background -->
     <div class="ambient-orb orb-1"></div>
     <div class="ambient-orb orb-2"></div>
 
-    <!-- Global Header -->
-    <nav class="fixed top-0 left-0 w-full py-6 px-6 md:px-12 flex justify-between items-center z-50 bg-void-bg border-b border-void-glassBorder shadow-sm">
-        <div class="font-serif text-2xl md:text-3xl tracking-[0.2em] flex items-center gap-4 text-void-textLight uppercase">
-            PHIL 3700
+    <nav class="fixed top-0 left-0 w-full z-50 bg-void-bg border-b border-void-glassBorder shadow-sm">
+        <div class="py-6 px-6 md:px-12 flex justify-between items-center">
+            <div class="font-serif text-2xl md:text-3xl tracking-[0.2em] flex items-center gap-4 text-void-textLight uppercase">
+                PHIL 3700
+            </div>
+            
+            <div class="hidden md:flex gap-10 font-sans text-xs uppercase tracking-[0.2em] font-medium">
+                <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+                <a href="{{ '/schedule/' | relative_url }}" class="nav-link {% if page.url == '/schedule.html' %}active{% endif %}">Schedule</a>
+                <a href="{{ '/resources/' | relative_url }}" class="nav-link {% if page.url == '/resources.html' %}active{% endif %}">Resources</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-void-textMain hover:text-void-textLight focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </div>
-        <div class="hidden md:flex gap-10 font-sans text-xs uppercase tracking-[0.2em] font-medium">
-            <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
-            <a href="{{ '/schedule/' | relative_url }}" class="nav-link {% if page.url == '/schedule.html' %}active{% endif %}">Schedule</a>
-            <a href="{{ '/resources/' | relative_url }}" class="nav-link {% if page.url == '/resources.html' %}active{% endif %}">Resources</a>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-void-bg border-t border-void-glassBorder shadow-inner">
+            <div class="px-6 py-4 flex flex-col gap-4 font-sans text-xs uppercase tracking-[0.2em] font-medium text-void-textMain">
+                <a href="{{ '/' | relative_url }}" class="hover:text-void-textLight {% if page.url == '/' %}text-void-textLight font-bold{% endif %}">Home</a>
+                <a href="{{ '/schedule/' | relative_url }}" class="hover:text-void-textLight {% if page.url == '/schedule.html' %}text-void-textLight font-bold{% endif %}">Schedule</a>
+                <a href="{{ '/resources/' | relative_url }}" class="hover:text-void-textLight {% if page.url == '/resources.html' %}text-void-textLight font-bold{% endif %}">Resources</a>
+            </div>
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="flex-grow max-w-6xl mx-auto px-6 w-full pt-32 pb-32">
         {{ content }}
     </main>
 
-    <!-- Footer -->
     <footer class="w-full py-12 text-center text-xs tracking-[0.2em] text-void-textMain/40 uppercase font-sans mt-auto">
         © 2026 Dr. Kevin J. Patton. UNO.
     </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>
