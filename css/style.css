@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+    background-color: #f8fafc;
+    color: #475569;
+    overflow-x: hidden;
+}
+
+/* Abstract glowing orbs in the background */
+.ambient-orb {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.15;
+    z-index: -1;
+    pointer-events: none;
+}
+.orb-1 {
+    width: 600px;
+    height: 600px;
+    background: #8b5cf6;
+    top: -100px;
+    right: -200px;
+}
+.orb-2 {
+    width: 500px;
+    height: 500px;
+    background: #3b82f6;
+    bottom: -100px;
+    left: -100px;
+}
+
+/* Glassmorphism Containers */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+}
+.glass-panel:hover {
+    border-color: #c4b5fd;
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+/* Fluid Navigation */
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+    color: #475569;
+    transition: color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: #0f172a;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+.nav-link:hover, .nav-link.active {
+    color: #0f172a;
+}
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+/* Ethereal Button */
+.btn-ethereal {
+    background: transparent;
+    border: 1px solid #475569;
+    color: #0f172a;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    padding: 1rem 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+}
+.btn-ethereal:hover {
+    background: #0f172a;
+    color: #f8fafc;
+    border-color: #0f172a;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
