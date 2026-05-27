@@ -44,8 +44,8 @@
             
             <div class="hidden md:flex gap-10 font-sans text-xs uppercase tracking-[0.2em] font-medium">
                 <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
-                <a href="{{ '/schedule/' | relative_url }}" class="nav-link {% if page.url == '/schedule.html' %}active{% endif %}">Schedule</a>
-                <a href="{{ '/resources/' | relative_url }}" class="nav-link {% if page.url == '/resources.html' %}active{% endif %}">Resources</a>
+                <a href="{{ '/schedule/' | relative_url }}" class="nav-link {% if page.url == '/schedule/' %}active{% endif %}">Schedule</a>
+                <a href="{{ '/resources/' | relative_url }}" class="nav-link {% if page.url == '/resources/' %}active{% endif %}">Resources</a>
             </div>
 
             <button id="mobile-menu-btn" class="md:hidden text-void-textMain hover:text-void-textLight focus:outline-none">
@@ -58,8 +58,8 @@
         <div id="mobile-menu" class="hidden md:hidden bg-void-bg border-t border-void-glassBorder shadow-inner">
             <div class="px-6 py-4 flex flex-col gap-4 font-sans text-xs uppercase tracking-[0.2em] font-medium text-void-textMain">
                 <a href="{{ '/' | relative_url }}" class="hover:text-void-textLight {% if page.url == '/' %}text-void-textLight font-bold{% endif %}">Home</a>
-                <a href="{{ '/schedule/' | relative_url }}" class="hover:text-void-textLight {% if page.url == '/schedule.html' %}text-void-textLight font-bold{% endif %}">Schedule</a>
-                <a href="{{ '/resources/' | relative_url }}" class="hover:text-void-textLight {% if page.url == '/resources.html' %}text-void-textLight font-bold{% endif %}">Resources</a>
+                <a href="{{ '/schedule/' | relative_url }}" class="hover:text-void-textLight {% if page.url == '/schedule/' %}text-void-textLight font-bold{% endif %}">Schedule</a>
+                <a href="{{ '/resources/' | relative_url }}" class="hover:text-void-textLight {% if page.url == '/resources/' %}text-void-textLight font-bold{% endif %}">Resources</a>
             </div>
         </div>
     </nav>
