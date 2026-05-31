@@ -1,6 +1,40 @@
 ---
-layout: 3700
-title: 404 Error
+layout: default
+title: 404 - Ontological Error
 ---
-<h1>Mea culpa</h1>
-<p>It looks like a link is broken. If this is class related, please contact me ASAP so that I can fix it.</p>
+
+<div class="flex flex-col items-center justify-center text-center py-20 md:py-32 relative z-10">
+
+    <!-- Abstract Metaphysical Icon (Possible Worlds) -->
+    <div class="mb-10 text-void-accent">
+        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="drop-shadow-[0_0_15px_theme('colors.void.accentDim')]">
+            <circle cx="8" cy="12" r="6"></circle>
+            <circle cx="16" cy="12" r="6"></circle>
+            <path d="M12 6v12"></path>
+            <path d="M12 6c-2 3-2 9 0 12"></path>
+            <path d="M12 6c2 3 2 9 0 12"></path>
+        </svg>
+    </div>
+
+    <!-- Metaphysical Header -->
+    <h1 class="font-serif text-7xl md:text-9xl font-black text-void-textLight mb-4 tracking-wider">
+        404
+    </h1>
+    <h2 class="font-serif text-2xl md:text-3xl text-void-accent mb-10 tracking-wide font-bold">
+        Ontological Void.
+    </h2>
+
+    <!-- Glassmorphism Text Container -->
+    <div class="glass-panel p-8 md:p-12 max-w-2xl mx-auto mb-14">
+        <p class="font-sans font-light text-lg text-void-textMain leading-relaxed">
+            We have traversed the modal landscape and searched all possible worlds. Unfortunately, the entity you are seeking lacks both spatial and temporal coordinates. It simply does not exist.
+        </p>
+    </div>
+
+    <!-- Return Button -->
+    <a href="{{ '/' | relative_url }}" class="btn-ethereal font-sans text-sm tracking-[0.2em] uppercase py-4 px-10 inline-flex items-center gap-3">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        Return to the Primary Dimension
+    </a>
+
+</div>
